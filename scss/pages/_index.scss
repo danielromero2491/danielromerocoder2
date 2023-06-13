@@ -1,0 +1,341 @@
+.header{
+    background-image: url(/img/postre\ \(2\).jpg);
+    opacity: 0.9;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    &-contenido{
+      text-align: center;
+
+      h1{
+        font-size: 75px;
+        line-height: 80px;
+        color: $colorprimario;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        }
+
+      p{
+        font-size: 16px;
+        color: $colorsecundario;
+        padding: 0 250px;
+        margin-bottom: 25px;
+      }
+    }
+    
+    }
+    
+
+
+.servicios {
+    background-color: $colorcrema;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+
+    &-contenido{
+      text-align: center;
+
+      h2{
+        font-size: 55px;
+        line-height: 70px;
+        color: $colorgris;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+
+      p{
+        font-size: 1.2rem;
+        color: $colorgrisinten;
+        margin-bottom: 50px;
+        padding: 0 100px;
+      }
+    }
+
+    &-grupo{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    &-1{
+      padding: 0 100px;
+
+      img{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+        border-radius: 15px 50px 30px;
+        box-shadow: 0px 2px 4px rgb(0, 0, 0);
+      }
+
+      h3{
+        color: $colorgrisinten;
+        font-size: 18px;
+        text-transform: uppercase;
+      
+      }
+    }
+  }
+  
+ 
+
+
+  .mocka {
+    padding: 100px 0;
+    background-image: linear-gradient(
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.7)),
+      url(/img/header.jfif);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+
+    &-contenido{
+      text-align: center;
+
+      h2{
+        font-size: 55px;
+        line-height: 70px;
+        color: $colorcrema;
+        text-transform: uppercase;
+        padding: 0 250px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-grupo{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    &-1{
+      padding: 0 25px;
+
+      img{
+        width: 200px;
+      }
+
+      h3{
+        color: $colorblanco;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+      p{
+        color: $colorgris;
+      }
+    }
+  }
+  
+  .texto-p{
+    font-size: 16px;
+    color: $colorsecundario;
+    padding: 0 250px;
+    margin-bottom: 35px;
+  }
+
+  
+  .general {
+    display: flex;
+
+    &-1{
+      width: 50%;
+      padding: 100px 100px 100px 100px;
+      background-color: $colorblanco2;
+      text-align: center;
+    }
+
+    &-2{
+      background-image: url(/img/indexsueno11.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+    }
+
+    &-3{
+      background-image: url(/img/mesapostre.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+    }
+  }
+  
+ 
+  h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: $colorgris;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  }
+  
+  p{
+    font-size: 16px;
+    color: $colorgris;
+    margin: 25px 0 45px 0;
+  }
+  
+  
+  .exper {
+    padding: 100px 0;
+    text-align: center;
+
+    &-contenido{
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    &-1{
+      padding: 25px 55px;
+
+      img{
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+      }
+
+      h3{
+        font-size: 25px;
+        color: $colorgrisinten;
+      }
+    }
+    }
+   
+
+  
+@media (max-width:991px){
+
+
+  .menu{
+    padding: 30px;
+
+    label{
+      display: initial;
+    }
+
+    .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: $colorgrisinten;
+      display: none;
+
+      ul li{
+        width: 100%;
+      }
+    }
+  }
+
+  
+
+  #menu:checked ~ .navbar{/*para que despliegue la hamburguesa*/
+    display: initial;
+  }
+
+
+.header {
+  min-height: 0vh;
+
+  &-contenido{
+    padding: 100px 30px;
+
+    p{
+      padding: 40px;
+    }
+  }
+}
+
+
+.mocka {
+  padding: 30px;
+
+  &-contenido {
+   h2{
+    padding: 0;
+  }
+  }
+
+  &-grupo{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.texto-p {
+  padding: 0;
+}
+
+
+
+.servicios {
+padding: 30px;
+
+  &-contenido{
+    p{
+      padding: 0;
+    }
+  }
+
+  &-grupo{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  &-1{
+    margin-bottom: 25px;
+  }
+}
+
+
+.general {
+  flex-direction: column;
+
+  &-1{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  &-2{
+    display: none;
+  }
+
+  &-3{
+    display: none;
+  }
+}
+
+
+
+.exper {
+  padding: 30px;
+
+  &-contenido{
+    flex-direction: column;
+  }
+
+  &-1{
+    padding: 0;
+
+    h3{
+      text-transform: uppercase;
+    }
+    }
+  }
+}

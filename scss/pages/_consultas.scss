@@ -1,0 +1,74 @@
+.header-consultas { 
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(/img/postre5.jpg);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      
+      }
+  
+  
+ .contenedor{
+    max-width: 800px;
+    margin:auto;
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url(/img/postre\ \(1\).jpg);
+    border-radius: 15px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+
+    h2{
+      text-align: center;
+      color: $colorcrema2;  
+    }
+
+    &-consulta form{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+      
+
+      
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    font-weight: bold;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button{
+    padding: 10px 20px;
+    background-color: $colorcrema2;
+    color: $colorprimario;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $colorenviar;
+    }
+  }
+}
+      
+
+      
+     
+  
+  
+  

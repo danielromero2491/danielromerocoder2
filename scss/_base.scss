@@ -1,0 +1,39 @@
+$colorprimario: #fffdfc;
+$coloramarillo: #e2df21;
+$colornaranja: #c79018;
+$colorcrema: #c4bd84;
+$colorgris: #414247;
+$colorgrisinten: #323337;
+$colorsecundario: #c5c5c5;
+$colorblanco: #f9fafc;
+$colorblanco2: #e1e2e6;
+$colormilitar: #837823;
+$colorcrema2: #c5ba66;
+$colorenviar: #45a049;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }

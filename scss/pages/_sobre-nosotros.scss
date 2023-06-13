@@ -1,0 +1,122 @@
+.header-nosotros { 
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(/img/group-people-working-out-business-plan-office\ \(1\).jpg);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      
+      }
+  
+  .header-contenido-nosotros {
+  text-align: center;
+
+    h1{
+      font-size: 55px;
+      line-height: 60px;
+      color: $colorcrema;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+
+    p{
+      font-size: 25px;
+      color: $colorsecundario;
+      padding: 0 250px;
+      margin-bottom: 25px;
+    }
+  }
+  
+
+  
+  .nosotros {
+    display: flex;
+
+    &-1{
+      width: 50%;
+      padding: 100px 100px 100px 100px;
+      background-color: $colorblanco2;
+      text-align: center;
+    }
+
+    &-2{
+      background-image: url(/img/chef-kitchen-restaurant-adding-sauce-salad.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+    }
+
+    &-3{
+      background-image: url(/img/mid-shot-pizza-chef-posing.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+    }
+
+    &-contenido{
+      text-align: center;
+      background-color: $colorcrema2;
+
+      h2{
+        font-size: 45px;
+        line-height: 80px;
+        color: $colorgrisinten;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);    
+      }
+
+      p{
+        font-size: 16px;
+        color: $colorgris;
+        padding: 30px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  
+  
+  .mensaje-nosotros {
+    text-align: center;
+    background-color: $colorcrema2;
+
+    h4{
+      font-size: 25px;
+      line-height: 80px;
+      color: $colorgrisinten;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+      margin-top: 35px;
+      box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+    }
+  }
+
+
+  @media (max-width:991px){
+    .nosotros {
+      flex-direction: column;
+
+      &-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+      }
+
+      &-2 {
+        display: none;
+      }
+
+      &-3{
+        display: none;
+      }
+      }
+    }
+    
+    

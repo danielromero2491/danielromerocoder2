@@ -1,339 +1,648 @@
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 15px;
+  padding: 10px;
+  color: #fffdfc;
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.menu .navbar ul li a:hover {
+  color: #e2df21;
+}
+.menu-icono {
+  width: 40px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.logo {
+  color: #fffdfc;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+#menu {
+  display: none;
+}
+
+.boton-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #e2df21;
+  color: rgb(249, 250, 252);
+  text-transform: uppercase;
+}
+.boton-1:hover {
+  background-color: #c79018;
+}
+
+.footer {
+  background-color: #414247;
+  padding: 80px 0;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-links h4 {
+  font-size: 20px;
+  color: #c4bd84;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #414247;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #c5c5c5;
+  display: block;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #c4bd84;
+  padding-left: 6px;
+}
+
+.redes-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #e1e2e6;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #c79018;
+  transition: all 0.5s ease;
+}
+.redes-link a:hover {
+  background-color: #c79018;
+}
+
+@media (max-width: 991px) {
+  .footer-row {
+    text-align: center;
+  }
+  .footer-row-links {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.header {
+  background-image: url(/img/postre\ \(2\).jpg);
+  opacity: 0.9;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.header-contenido {
+  text-align: center;
+}
+.header-contenido h1 {
+  font-size: 75px;
+  line-height: 80px;
+  color: #fffdfc;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.header-contenido p {
+  font-size: 16px;
+  color: #c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.servicios {
+  background-color: #c4bd84;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+.servicios-contenido {
+  text-align: center;
+}
+.servicios-contenido h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #414247;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.servicios-contenido p {
+  font-size: 1.2rem;
+  color: #323337;
+  margin-bottom: 50px;
+  padding: 0 100px;
+}
+.servicios-grupo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.servicios-1 {
+  padding: 0 100px;
+}
+.servicios-1 img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  border-radius: 15px 50px 30px;
+  box-shadow: 0px 2px 4px rgb(0, 0, 0);
+}
+.servicios-1 h3 {
+  color: #323337;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.mocka {
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/header.jfif);
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+.mocka-contenido {
+  text-align: center;
+}
+.mocka-contenido h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #c4bd84;
+  text-transform: uppercase;
+  padding: 0 250px;
+  margin-bottom: 15px;
+}
+.mocka-grupo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.mocka-1 {
+  padding: 0 25px;
+}
+.mocka-1 img {
+  width: 200px;
+}
+.mocka-1 h3 {
+  color: #f9fafc;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.mocka-1 p {
+  color: #414247;
+}
+
+.texto-p {
+  font-size: 16px;
+  color: #c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 35px;
+}
+
+.general {
+  display: flex;
+}
+.general-1 {
+  width: 50%;
+  padding: 100px 100px 100px 100px;
+  background-color: #e1e2e6;
+  text-align: center;
+}
+.general-2 {
+  background-image: url(/img/indexsueno11.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+.general-3 {
+  background-image: url(/img/mesapostre.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #414247;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #414247;
+  margin: 25px 0 45px 0;
+}
+
+.exper {
+  padding: 100px 0;
+  text-align: center;
+}
+.exper-contenido {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.exper-1 {
+  padding: 25px 55px;
+}
+.exper-1 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+}
+.exper-1 h3 {
+  font-size: 25px;
+  color: #323337;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar { /*para que despliegue la hamburguesa*/
+    display: initial;
+  }
+  .header {
+    min-height: 0vh;
+  }
+  .header-contenido {
+    padding: 100px 30px;
+  }
+  .header-contenido p {
+    padding: 40px;
+  }
+  .mocka {
+    padding: 30px;
+  }
+  .mocka-contenido h2 {
     padding: 0;
-    box-sizing: border-box;
-   }
-
-   /*para eliminar viñetas*/
-ul, ol{
-    list-style: none;
-    color: #0e0d0d;
-}
-
-
-.bg-body-tertiary{
-    background-color:rgb(12, 209, 143) !important
-}
-
-.bg-nosotros{
-    background-color: rgb(32, 207, 207);
-}
-
-.tarjeta-staff{
-    width: 15rem;
-    background-color: rgb(204, 243, 250);
-    border-radius: 10%;
-}
-
-
-/** portada**/
-
-.portada-index{
-    height: 70vh;
-    background-image: url(../img/portada-index-prov.jpg);
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portada-texto-index{
-   background-color: rgba(224, 210, 210, 0.479);
-   font-family: "roboto Condensed";
-    width: 500px;
-    height: 150px;
-    border-radius: 15px;
-
-    text-align: center;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.palabra-destacada{
-    font-size: 4rem;
-}
-
-
-
-.frase-index{
-    font-family:"roboto Condensed";
-    height: 15vh;
-    background-color: rgba(211, 55, 128, 0.603);
-    margin: 20px;
-    border: 10px;
-    
-    text-align: center;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    font-size: 100rem;
-    color: aliceblue;
-}
-
-
-
-@media (min-width:768px) {
-    .frase-index{
-        background-image: url(../img/portada-index-prov.jpg);
-    }
-
-}
-
-
-/**============nuestros productos=========**/
-
-.produto-tortas{
-    display: flex;
+  }
+  .mocka-grupo {
     flex-direction: column;
-    align-items: center;
-
-    gap: 30px;
-
-}
-
-.produto-tortas img{
-    width: 95%;
-    height: 300px;
-}
-
-@media (min-width:768px){
-    .produto-tortas{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat();
-
-        padding: 15px;
-    }
-
-}
-
-@media (min-width:1024px){
-    .produto-tortas{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat();
-
-        padding: 15px;
-    }
-}
-
-
-/**galeria trabajos*/
-
-#galeria .col-lg-4{
-    margin: 0 !important;
-    padding: 25px;
-}
-
-#galeria img{
-    width:100%;
-    height: 350px;
-    border: 5px solid #ccc;
-    float: left;
-    margin: 15px;
-    -webkit-transition: margin 0.5s ease-out;
-    -moz-transition: margin 0.5s ease-out;
-    -o-transition: margin 0.5s ease-out;
-}
-#galeria img:hover {
-    border: 5px solid #fff;
-    margin-top: 2px;
-}
-
-/*========servicios=======*/
-.texto-servicio{
-    background-color: brown;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-.servicios{
-    background-color: brown;
-    margin-bottom: 20px ;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    text-align: center;
-}
-
-.tarjetas-servicios {
-    width: 250px;
-    height: 250px;
-}
-
-.tarjetas-servicios img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-/**PRODUCTOS INDEX**/
-
-.productos-index{
-    margin: 40px;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    text-align: center;
-}
-
-.tarjeta-producto-index {
-    width: 250px;
-    height: 250px;
-}
-
-.tarjeta-producto-index img{
+    margin-bottom: 0;
+  }
+  .texto-p {
+    padding: 0;
+  }
+  .servicios {
+    padding: 30px;
+  }
+  .servicios-contenido p {
+    padding: 0;
+  }
+  .servicios-grupo {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .servicios-1 {
+    margin-bottom: 25px;
+  }
+  .general {
+    flex-direction: column;
+  }
+  .general-1 {
     width: 100%;
-    height: 100%;
-}
-
-/* ----seccion chef */
-
-.seccion-chef{
-    background-color: brown;
-    margin: 20px ;
-    display: flex;
-    justify-content:baseline;
-    align-items:center;
+    padding: 30px;
     text-align: center;
   }
-  .seccion-chef img{
-    width: 100%;
-    height: 800px;
+  .general-2 {
+    display: none;
   }
-
-.biografia-chef{
-    font-family: 'Inter';
-    font-size: 1.5rem;
-
+  .general-3 {
+    display: none;
+  }
+  .exper {
+    padding: 30px;
+  }
+  .exper-contenido {
+    flex-direction: column;
+  }
+  .exper-1 {
+    padding: 0;
+  }
+  .exper-1 h3 {
+    text-transform: uppercase;
+  }
 }
-.titulos-medianos{
-    font-family:"roboto Condensed" ;
-    font-size: 2rem;
+.header-nosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/group-people-working-out-business-plan-office\ \(1\).jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-/* frase instragram */
+.header-contenido-nosotros {
+  text-align: center;
+}
+.header-contenido-nosotros h1 {
+  font-size: 55px;
+  line-height: 60px;
+  color: #c4bd84;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.header-contenido-nosotros p {
+  font-size: 25px;
+  color: #c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
 
-.frase-instagram{
-        background-color: rgba(18, 48, 180, 0.774);
-        width: 60%;
-        height: 50px;
-        margin-left: 25%;
-        border: 10px;
-        border-radius: 15px;
-        
-        text-align: center;
-    
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        font-size: 2rem;
-    }
+.nosotros {
+  display: flex;
+}
+.nosotros-1 {
+  width: 50%;
+  padding: 100px 100px 100px 100px;
+  background-color: #e1e2e6;
+  text-align: center;
+}
+.nosotros-2 {
+  background-image: url(/img/chef-kitchen-restaurant-adding-sauce-salad.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+.nosotros-3 {
+  background-image: url(/img/mid-shot-pizza-chef-posing.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+.nosotros-contenido {
+  text-align: center;
+  background-color: #c5ba66;
+}
+.nosotros-contenido h2 {
+  font-size: 45px;
+  line-height: 80px;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+}
+.nosotros-contenido p {
+  font-size: 16px;
+  color: #414247;
+  padding: 30px;
+  margin-bottom: 25px;
+}
 
-    /* tarjetas */
+.mensaje-nosotros {
+  text-align: center;
+  background-color: #c5ba66;
+}
+.mensaje-nosotros h4 {
+  font-size: 25px;
+  line-height: 80px;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+}
 
-.tarjetas-index{
-   
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
+@media (max-width: 991px) {
+  .nosotros {
+    flex-direction: column;
+  }
+  .nosotros-1 {
+    width: 100%;
+    padding: 30px;
     text-align: center;
-    
+  }
+  .nosotros-2 {
+    display: none;
+  }
+  .nosotros-3 {
+    display: none;
+  }
+}
+.header-productos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/top-view-table-full-sweet-delicious-desserts-cupcakes-donuts-panna-cotta-desserts-candy-pops-tiramisu\ \(1\).jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.tarjetas-metodos {
-    background-color: aquamarine;
-    width: 25%;
-    height: 10px;
-    margin: 20px;
-    padding: 45px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    }
+.card-section {
+  padding: 20px;
+  background-color: #fffdfc;
+  text-align: center;
+}
 
-    /* mas vendidos */
-.mas-vendidos{
-    background-color: brown;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    }
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-.mas-vendidos-index{
-    margin: 40px;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    text-align: center;
-    }
-    
-.producto-ind{
-        width: 250px;
-        height: 250px;
-    }
-.producto-ind img{
-        width: 100%;
-        height: 100%;
-    }
+.card {
+  width: 300px;
+  margin: 20px;
+  background-color: #c4bd84;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+}
+.card-img {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  font-size: 20px;
+  color: #323337;
+  margin-bottom: 10px;
+}
+.card-content p {
+  font-size: 16px;
+  color: #414247;
+  margin-bottom: 20px;
+}
 
+.header-trabajos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/delicious-sweets-candy-catering\ \(1\).jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
-    /**formulario*/
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px;
+}
 
-    .formulario{
-        background: #18bedb;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .contenedor .form .form-header .form-title{
-        font-weight: normal;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: #ccc;
-    }
-    
-    .contenedor .form .form-header .form-title span{
-    color: #fff;
-    
-    }
-    
-    .contenedor .form {
-        background: rgba(0,0,0,0. .6);
-        width: 90%;
-        max-width: 650px;
-        margin: auto;
-        padding: 5px 35px;
-        margin-top: 30px;
-        padding-bottom: 30px;
-        border-radius: 3px;
-    }
-    
-    .contenedor .form .form-label{
-        display: block;
-        color: #ff8516;
-        font-size: 16px;
-        font-family: 'Roboto Condensed', sans-serif;
-    
-    }
-    
-    .contenedor .form .form-input .form-textarea{
-        background: rgba(0,0,0,0. .7);
-        border: none;
-        outline: none;
-        border-bottom: 2px solid #ff851b;
-        width: 100px;
-        padding: 12px;
-        margin-bottom: 20px;
-        border-radius: 2px;
-        font-size: 14px;
-        color: #fff;
-        font-family: roboto;
-    }    
+.imagen-trabajos {
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.imagen-trabajos img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  object-fit: cover;
+}
+.imagen-trabajos img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .imagen-trabajos {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+}
+.header-consultas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/postre5.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/postre\ \(1\).jpg);
+  border-radius: 15px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
+}
+.contenedor h2 {
+  text-align: center;
+  color: #c5ba66;
+}
+.contenedor-consulta form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: bold;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: #c5ba66;
+  color: #fffdfc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+/*# sourceMappingURL=style.css.map */
