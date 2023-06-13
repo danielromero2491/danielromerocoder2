@@ -206,7 +206,7 @@ body {
 
 .mocka {
   padding: 100px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/header.jfif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header.jfif);
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -262,14 +262,14 @@ body {
   text-align: center;
 }
 .general-2 {
-  background-image: url(/img/indexsueno11.jpg);
+  background-image: url(../img/indexsueno11.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
 }
 .general-3 {
-  background-image: url(/img/mesapostre.jpeg);
+  background-image: url(../img/mesapostre.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,7 +398,7 @@ p {
   }
 }
 .header-nosotros {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/group-people-working-out-business-plan-office\ \(1\).jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/group-people-working-out-business-plan-office\ \(1\).jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -434,14 +434,14 @@ p {
   text-align: center;
 }
 .nosotros-2 {
-  background-image: url(/img/chef-kitchen-restaurant-adding-sauce-salad.jpg);
+  background-image: url(../img/chef-kitchen-restaurant-adding-sauce-salad.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
 }
 .nosotros-3 {
-  background-image: url(/img/mid-shot-pizza-chef-posing.jpg);
+  background-image: url(../img/mid-shot-pizza-chef-posing.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -498,7 +498,7 @@ p {
   }
 }
 .header-productos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/top-view-table-full-sweet-delicious-desserts-cupcakes-donuts-panna-cotta-desserts-candy-pops-tiramisu\ \(1\).jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/top-view-table-full-sweet-delicious-desserts-cupcakes-donuts-panna-cotta-desserts-candy-pops-tiramisu\ \(1\).jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,7 +548,7 @@ p {
 }
 
 .header-trabajos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/delicious-sweets-candy-catering\ \(1\).jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/delicious-sweets-candy-catering\ \(1\).jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -594,7 +594,7 @@ p {
   }
 }
 .header-consultas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/postre5.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/postre5.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -608,7 +608,7 @@ p {
   margin: auto;
   padding: 50px;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/postre\ \(1\).jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/postre\ \(1\).jpg);
   border-radius: 15px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.9);
 }
