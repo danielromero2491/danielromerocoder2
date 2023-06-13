@@ -218,35 +218,7 @@
    
 
   
-@media (max-width:991px){
-
-
-  .menu{
-    padding: 30px;
-
-    label{
-      display: initial;
-    }
-
-    .navbar{
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: $colorgrisinten;
-      display: none;
-
-      ul li{
-        width: 100%;
-      }
-    }
-  }
-
-  
-
-  #menu:checked ~ .navbar{/*para que despliegue la hamburguesa*/
-    display: initial;
-  }
+/*aca borre menu*/
 
 
 .header {

@@ -31,9 +31,43 @@ $colorenviar: #45a049;
     margin: 0 auto;
   
   }
+  
+
+  @media (max-width:991px){
+
+
+    .menu{
+      padding: 30px;
+  
+      label{
+        display: initial;
+      }
+  
+      .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: $colorgrisinten;
+        display: none;
+  
+        ul li{
+          width: 100%;
+        }
+      }
+    }
+  
+    
+    #menu:checked ~ .navbar{/*para que despliegue la hamburguesa*/
+      display: initial;
+    }
+}
+
+
 
   @media (max-width: 768px) {
     .container {
       padding: 10px;
     }
   }
+
